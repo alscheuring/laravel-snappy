@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\Snappy;
+<?php namespace Alscheuring\Snappy;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
