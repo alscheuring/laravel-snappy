@@ -1,5 +1,5 @@
 <?php
-namespace Barryvdh\Snappy\Facades;
+namespace Alscheuring\Snappy\Facades;
 
 use Illuminate\Support\Facades\Facade as BaseFacade;
 
