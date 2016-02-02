@@ -1,5 +1,5 @@
 {
-    "name": "alscheuring/laravel-snappy",
+    "name": "barryvdh/laravel-snappy",
     "description": "Snappy PDF/Image for Laravel 4",
     "keywords": ["laravel","snappy", "pdf", "image", "wkhtmltopdf", "wkhtmltoimage"],
     "license": "MIT",
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Alscheuring\\Snappy\\": "src/"
+            "Barryvdh\\Snappy\\": "src/"
         }
     },
     "extra": {
