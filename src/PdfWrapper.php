@@ -163,20 +163,20 @@ class PdfWrapper{
      * @param $filename
      * @return static
      */
-    public function save($filename)
+public function save($filename, $overwrite = false)
+{
+
+    if ($this->html)
     {
-
-        if ($this->html)
-        {
-            $this->snappy->generateFromHtml($this->html, $filename, $this->options);
-        }
-        elseif ($this->file)
-        {
-            $this->snappy->generate($this->file, $filename, $this->options);
-        }
-
-        return $this;
+        $this->snappy->generateFromHtml($this->html, $filename, $this->options, $overwrite);
     }
+    elseif ($this->file)
+    {
+        $this->snappy->generate($this->file, $filename, $this->options, $overwrite);
+    }
+
+    return $this;
+}
 
     /**
      * Make the PDF downloadable by the user
